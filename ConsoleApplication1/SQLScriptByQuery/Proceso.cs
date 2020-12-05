@@ -129,15 +129,25 @@ namespace SQLScriptByQuery
                         builder.Append($"N'{value}'");
                         break;
 
-                    case "INT32":
-                        builder.Append($"{value}");
-                        break;
-
                     case "DATETIME":
-                        builder.Append($"CAST(N'{value}' AS DateTime2)");
+                        var date = DateTime.Parse(value.ToString());
+                        builder.Append($"CAST(N'{date.ToString("yyyy-MM-dd HH:mm:ss")}' AS DateTime2)");
                         break;
 
                     case "DOUBLE":
+                        value = value.ToString().Replace(",", ".");
+                        builder.Append($"{value}");
+                        break;
+
+                    case "SINGLE":
+                        builder.Append($"{value}");
+                        break;
+
+                    case "INT16":
+                        builder.Append($"{value}");
+                        break;
+
+                    case "INT32":
                         builder.Append($"{value}");
                         break;
 
@@ -149,6 +159,7 @@ namespace SQLScriptByQuery
                         break;
 
                     default:
+                        builder.Append($"{value}");
                         break;
                 }
             }
