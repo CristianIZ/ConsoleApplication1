@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29020.237
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{CFADE18B-9895-4CC6-A1EC-0600538E9242}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HourSubtractor", "HourSubtractor\HourSubtractor.csproj", "{5737A235-FD6D-4E23-82F7-926A994820AB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Composite.csproj", "{A8E37B31-D5DD-4D64-AF43-AA05E5C61ACA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication1", "WindowsFormsApplication1\WindowsFormsApplication1.csproj", "{25AE4E01-47D6-41CB-960E-005CCDC755EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiempo Inactivo", "WindowsFormsApplication1\Tiempo Inactivo.csproj", "{25AE4E01-47D6-41CB-960E-005CCDC755EA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication2", "WindowsFormsApplication2\WindowsFormsApplication2.csproj", "{9C975B00-B5BD-4BE7-ADD3-280240FBBB8D}"
 EndProject
@@ -49,16 +47,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFAH4", "WFAH4\WFAH4.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuplicateFiles", "DuplicateFiles\DuplicateFiles.csproj", "{E2FE727D-9A6C-41FD-98DC-1A5165363F13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medido de Ping", "Medido de Ping\Medido de Ping.csproj", "{7F9969B5-E685-40E2-87E8-FB993E87445D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorRecursos", "MonitorRecursos\MonitorRecursos.csproj", "{679841C4-B656-4A30-900A-640FE9E396BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoApagado", "AutoApagado\AutoApagado.csproj", "{3D1924DF-E7AA-42A8-ACD6-63272B60D873}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemoteShutdown", "RemoteShutdown\RemoteShutdown.csproj", "{5AE08714-E685-4B5D-93AA-A9D0B71F41A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLScriptByQuery", "SQLScriptByQuery\SQLScriptByQuery.csproj", "{E1C28DCF-70AC-4DA9-97CF-541CB346FCB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CFADE18B-9895-4CC6-A1EC-0600538E9242}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CFADE18B-9895-4CC6-A1EC-0600538E9242}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CFADE18B-9895-4CC6-A1EC-0600538E9242}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CFADE18B-9895-4CC6-A1EC-0600538E9242}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5737A235-FD6D-4E23-82F7-926A994820AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5737A235-FD6D-4E23-82F7-926A994820AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5737A235-FD6D-4E23-82F7-926A994820AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -147,6 +151,26 @@ Global
 		{E2FE727D-9A6C-41FD-98DC-1A5165363F13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2FE727D-9A6C-41FD-98DC-1A5165363F13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2FE727D-9A6C-41FD-98DC-1A5165363F13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F9969B5-E685-40E2-87E8-FB993E87445D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F9969B5-E685-40E2-87E8-FB993E87445D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F9969B5-E685-40E2-87E8-FB993E87445D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F9969B5-E685-40E2-87E8-FB993E87445D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{679841C4-B656-4A30-900A-640FE9E396BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{679841C4-B656-4A30-900A-640FE9E396BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{679841C4-B656-4A30-900A-640FE9E396BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{679841C4-B656-4A30-900A-640FE9E396BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D1924DF-E7AA-42A8-ACD6-63272B60D873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D1924DF-E7AA-42A8-ACD6-63272B60D873}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D1924DF-E7AA-42A8-ACD6-63272B60D873}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D1924DF-E7AA-42A8-ACD6-63272B60D873}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AE08714-E685-4B5D-93AA-A9D0B71F41A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AE08714-E685-4B5D-93AA-A9D0B71F41A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AE08714-E685-4B5D-93AA-A9D0B71F41A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AE08714-E685-4B5D-93AA-A9D0B71F41A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1C28DCF-70AC-4DA9-97CF-541CB346FCB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1C28DCF-70AC-4DA9-97CF-541CB346FCB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1C28DCF-70AC-4DA9-97CF-541CB346FCB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1C28DCF-70AC-4DA9-97CF-541CB346FCB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
