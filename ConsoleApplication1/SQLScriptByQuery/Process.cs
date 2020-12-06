@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace SQLScriptByQuery
 {
-    public class Proceso : IDisposable
+    public class Process : IDisposable
     {
         public SqlConnection Connection { get; set; }
 
-        public Proceso(string connectionString)
+        public Process(string connectionString)
         {
             Connection = new SqlConnection(connectionString);
         }
@@ -117,7 +117,7 @@ namespace SQLScriptByQuery
 
         public void AppendValue(object value, string DataType, StringBuilder builder)
         {
-            if (HandleNullValue(value))
+            if (CheckNullValue(value))
             {
                 builder.Append($"NULL");
             }
@@ -159,13 +159,14 @@ namespace SQLScriptByQuery
                         break;
 
                     default:
+                        Logger.LogInfo($"Tipo de dato no contemplado --- tipo: {DataType} --- Valor actual: {value}");
                         builder.Append($"{value}");
                         break;
                 }
             }
         }
 
-        public bool HandleNullValue(object value)
+        public bool CheckNullValue(object value)
         {
             return value.GetType().Name.ToUpper() == "DBNULL";
         }
