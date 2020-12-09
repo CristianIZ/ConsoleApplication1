@@ -126,6 +126,8 @@ namespace SQLScriptByQuery
                 switch (DataType.ToUpper())
                 {
                     case "STRING":
+                        // Si el valor es ' simple entonces se agregan 2 ''
+                        value = ((string)value).Replace("'", "''");
                         builder.Append($"N'{value}'");
                         break;
 
