@@ -38,10 +38,12 @@ namespace LC.UserInterface
             this.btnEditProfile = new System.Windows.Forms.Button();
             this.btnDeleteProfile = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnDeleteFile = new System.Windows.Forms.Button();
+            this.btnSetProfile = new System.Windows.Forms.Button();
             this.btnSaveChanges = new System.Windows.Forms.Button();
             this.btnOpenFileLocation = new System.Windows.Forms.Button();
             this.btnAddFile = new System.Windows.Forms.Button();
-            this.btnSetProfile = new System.Windows.Forms.Button();
+            this.btnClone = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
@@ -77,6 +79,7 @@ namespace LC.UserInterface
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnClone);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.txtDescription);
             this.groupBox2.Controls.Add(this.btnAddProfile);
@@ -131,6 +134,7 @@ namespace LC.UserInterface
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.btnDeleteFile);
             this.groupBox3.Controls.Add(this.btnSetProfile);
             this.groupBox3.Controls.Add(this.btnSaveChanges);
             this.groupBox3.Controls.Add(this.btnOpenFileLocation);
@@ -142,6 +146,26 @@ namespace LC.UserInterface
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Archivos";
+            // 
+            // btnDeleteFile
+            // 
+            this.btnDeleteFile.Location = new System.Drawing.Point(393, 57);
+            this.btnDeleteFile.Name = "btnDeleteFile";
+            this.btnDeleteFile.Size = new System.Drawing.Size(199, 30);
+            this.btnDeleteFile.TabIndex = 10;
+            this.btnDeleteFile.Text = "Eliminar";
+            this.btnDeleteFile.UseVisualStyleBackColor = true;
+            this.btnDeleteFile.Click += new System.EventHandler(this.btnDeleteFile_Click);
+            // 
+            // btnSetProfile
+            // 
+            this.btnSetProfile.Location = new System.Drawing.Point(201, 159);
+            this.btnSetProfile.Name = "btnSetProfile";
+            this.btnSetProfile.Size = new System.Drawing.Size(186, 43);
+            this.btnSetProfile.TabIndex = 9;
+            this.btnSetProfile.Text = "Establecer perfil";
+            this.btnSetProfile.UseVisualStyleBackColor = true;
+            this.btnSetProfile.Click += new System.EventHandler(this.btnSetProfile_Click);
             // 
             // btnSaveChanges
             // 
@@ -155,7 +179,7 @@ namespace LC.UserInterface
             // 
             // btnOpenFileLocation
             // 
-            this.btnOpenFileLocation.Location = new System.Drawing.Point(393, 57);
+            this.btnOpenFileLocation.Location = new System.Drawing.Point(393, 123);
             this.btnOpenFileLocation.Name = "btnOpenFileLocation";
             this.btnOpenFileLocation.Size = new System.Drawing.Size(199, 30);
             this.btnOpenFileLocation.TabIndex = 2;
@@ -173,15 +197,15 @@ namespace LC.UserInterface
             this.btnAddFile.UseVisualStyleBackColor = true;
             this.btnAddFile.Click += new System.EventHandler(this.btnAddFile_Click);
             // 
-            // btnSetProfile
+            // btnClone
             // 
-            this.btnSetProfile.Location = new System.Drawing.Point(201, 159);
-            this.btnSetProfile.Name = "btnSetProfile";
-            this.btnSetProfile.Size = new System.Drawing.Size(186, 43);
-            this.btnSetProfile.TabIndex = 9;
-            this.btnSetProfile.Text = "Establecer perfil";
-            this.btnSetProfile.UseVisualStyleBackColor = true;
-            this.btnSetProfile.Click += new System.EventHandler(this.btnSetProfile_Click);
+            this.btnClone.Location = new System.Drawing.Point(393, 92);
+            this.btnClone.Name = "btnClone";
+            this.btnClone.Size = new System.Drawing.Size(199, 30);
+            this.btnClone.TabIndex = 7;
+            this.btnClone.Text = "Clonar";
+            this.btnClone.UseVisualStyleBackColor = true;
+            this.btnClone.Click += new System.EventHandler(this.btnClone_Click);
             // 
             // Main
             // 
@@ -214,6 +238,8 @@ namespace LC.UserInterface
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnAddProfile;
         private System.Windows.Forms.Button btnSetProfile;
+        private System.Windows.Forms.Button btnDeleteFile;
+        private System.Windows.Forms.Button btnClone;
     }
 }
 

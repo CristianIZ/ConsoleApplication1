@@ -311,13 +311,9 @@ namespace LC.UserInterface
         public Dto.FilesDto GetSelectedFile()
         {
             if (!IsValidFileSelectedItem())
-            {
                 throw new ValidationError(MessageEnum.SelectedFileListError);
-            }
             else
-            {
                 return (Dto.FilesDto)fileList.SelectedItem;
-            }
         }
 
         public void SaveChanges()
@@ -332,9 +328,7 @@ namespace LC.UserInterface
                 var result = ShowDecition(MessageEnum.DeleteMissingFilesDecition);
 
                 if (result != DialogResult.Yes)
-                {
                     throw new ValidationError(MessageEnum.AbortedProcess);
-                }
 
                 // Obtengo una nueva lista con archivos unicamente validos
                 var validFiles = new List<Dto.FilesDto>();
@@ -385,5 +379,41 @@ namespace LC.UserInterface
             return true;
         }
         #endregion
+
+        private void btnDeleteFile_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Realizo el get para chequear que este seleccionado
+                GetSelectedFile();
+
+                this.fileList.Items.RemoveAt(this.fileList.SelectedIndex);
+            }
+            catch (ValidationError ex)
+            {
+                ShowMessage(ex.MessageEnum);
+            }
+            catch (Exception)
+            {
+            }
+        }
+
+        private void btnClone_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var selectedProfile = GetSelectedProfile();
+                
+
+            }
+            catch (ValidationError ex)
+            {
+                ShowMessage(ex.MessageEnum);
+            }
+            catch
+            {
+
+            }
+        }
     }
 }
